@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS urldb;
+
+CREATE TABLE urldb (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  primary_url VARCHAR(500) NOT NULL,
+  short_url VARCHAR(250) NOT NULL
+);
