@@ -15,19 +15,24 @@ Maven build tool is build the project. Below command is to build the jar
 Docker Commands
 
 To Build Docker Image
-docker build -t assessment/url-shortener .
+	
+	docker build -t assessment/url-shortener .
 
 To Run the Docker Image
-docker run -p 8080:8080 assessment/url-shortener
+
+	docker run -p 8080:8080 assessment/url-shortener
 
 Tag the Image before pushing to the Docker Hub Repository
-docker tag assessment/url-shortener stanraj/assessments:url-shortener
+	
+	docker tag assessment/url-shortener stanraj/assessments:url-shortener
 
 Push the image to the Docker hub repository using the dockerid
-docker push stanraj/assessments:url-shortener
+	
+	docker push stanraj/assessments:url-shortener
 
 Pulling the image from docker repository to local
-docker pull stanraj/assessments:url-shortener
+
+	docker pull stanraj/assessments:url-shortener
 
 Docker Repository URL
 https://hub.docker.com/r/stanraj/assessments/tags?page=1&ordering=last_updated
